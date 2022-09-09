@@ -18,15 +18,19 @@ export interface Props {
     */
     allCaps?: boolean
     /**
-     *  What background color you use
+     *  What color you use
      */
-    backgroundColor? : string;
+    fontColor? : string;
+    /**
+     * Background Color
+     */
+    backgroundColor?: string;
 }
 
-export const MyLabel = ({label='No Lagel',size='normal',color='primary',allCaps=false,backgroundColor}:Props) => {
+export const MyLabel = ({label='No Lagel',size='normal',color='primary',allCaps=false,fontColor,backgroundColor = 'transparent'}:Props) => {
   
   return (
-    <span style={{ color:backgroundColor}} className={`label ${ size } text-${color} `}>
+    <span style={{ color:fontColor,backgroundColor}} className={`label ${ size } text-${color} `}>
         {allCaps === true ? label.toUpperCase() : label}
     </span>
   )
