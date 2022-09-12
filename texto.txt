@@ -1,0 +1,5 @@
+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
+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  
+generar un token en npm
+1.- Crear un nuevo token y poner la opcion Publish
+2.- Crear un nuevo repositorio secreto en repositorio de git
