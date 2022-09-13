@@ -35,3 +35,5 @@ export const MyLabel = ({label='No Lagel',size='normal',color='primary',allCaps=
     </span>
   )
 }
+
+export default MyLabel;
